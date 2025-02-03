@@ -2,12 +2,14 @@ package jack.ripper.lesson_2
 
 fun main() {
 
-    var Ivan = 3
-    var Alex = 4
-    var Olya = 3
-    var Jack = 5
+    var ivan = 3
+    var alex = 4
+    var olya = 3
+    var jack = 5
 
-    var average= ((Ivan + Alex + Olya + Jack)/4.0)
+    var studentsCounter = 4
+
+    var average= ((ivan + alex + olya + jack).toFloat() / studentsCounter)
 
     print(average)
 
