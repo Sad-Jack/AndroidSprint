@@ -10,5 +10,6 @@ fun main() {
     val minutes: Byte = (remainingSecondsAfterHours / 60).toByte()
     val seconds: Byte = (remainingSecondsAfterHours % 60).toByte()
 
-    println("Время в космосе: [$hours:$minutes:$seconds]")
+    val formattedTime = String.format("%02d:%02d:%02d", hours, minutes, seconds)
+    println("Время в космосе: [$formattedTime]")
 }
