@@ -1,5 +1,7 @@
 package jack.ripper.lesson_2
 
+const val MINUTES_IN_HOUR = 60
+
 fun main() {
     var departure = "9:39"
     var flightTime = 457
@@ -7,13 +9,15 @@ fun main() {
     var departureHour = departure.split(":")[0].toInt()
     var departureMinute = departure.split(":")[1].toInt()
 
-    var departureTimeInMinutes = departureHour * 60 + departureMinute
+    var departureTimeInMinutes = departureHour * MINUTES_IN_HOUR + departureMinute
 
     var comingTimeInMinutes = flightTime + departureTimeInMinutes
 
-    var comingHours = comingTimeInMinutes / 60
-    var comingMinutes = comingTimeInMinutes % 60
+    var comingHours = comingTimeInMinutes / MINUTES_IN_HOUR
+    var comingMinutes = comingTimeInMinutes % MINUTES_IN_HOUR
 
-    println("Время прибытия поезда: [$comingHours:$comingMinutes]")
+    val formattedTime = String.format("%02d:%02d", comingHours, comingMinutes)
+
+    println("Время прибытия поезда: [$formattedTime]")
 
 }
