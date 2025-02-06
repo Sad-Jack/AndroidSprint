@@ -1,5 +1,7 @@
 package jack.ripper.lesson_2
 
+import kotlin.math.pow
+
 const val PERCENT_DIVISOR = 100.0
 
 fun main() {
@@ -7,8 +9,8 @@ fun main() {
     val interestRatePercent = 16.7
     val years = 20
 
-    val interestRate = (interestRatePercent / PERCENT_DIVISOR) + 1
-    val finalAmount = initialDeposit * Math.pow(interestRate, years.toDouble())
+    val interestRate = interestRatePercent / PERCENT_DIVISOR
+    val finalAmount = initialDeposit * (1 + interestRate).pow(years)
 
     println(String.format("%.3f", finalAmount))
 }
