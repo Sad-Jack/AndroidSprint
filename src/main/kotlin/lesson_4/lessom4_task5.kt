@@ -2,13 +2,10 @@ package jack.ripper.lesson_4
 
 fun main() {
 
-    val defect = false
     val countCrew = 55..70
     val countProvisionBoxMin = 50
 
     val altCountCrew = 70
-    val altCountProvisionBoxMin = 50
-    val weather = true
 
 
     println("Наличие повреждений корпуса: ")
@@ -24,15 +21,15 @@ fun main() {
     var inputWeather = readln().toBoolean() // true - благоприятна or false - неблагоприятная
 
     var approval =
-                (defect == inputDefect) &&
+                (inputDefect) &&
                 (inputCountCrew in countCrew) &&
-                (countProvisionBoxMin < inputCountProvisionBoxMin)
+                (inputCountProvisionBoxMin > countProvisionBoxMin)
 
     var altApproval =
-                (defect != inputDefect) &&
+                (!inputDefect) &&
                 (altCountCrew == inputCountCrew) &&
-                (altCountProvisionBoxMin <= inputCountProvisionBoxMin) &&
-                (weather == inputWeather)
+                (countProvisionBoxMin <= inputCountProvisionBoxMin) &&
+                (inputWeather)
 
     println(
         """
