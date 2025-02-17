@@ -1,12 +1,13 @@
 package jack.ripper.lesson_5
 
 fun main() {
-    val robotTest = "111 + 999 = "
-    val answer = 1110
+    val operantOne = 11
+    val operantTwo = 99
+    val answer = operantOne + operantTwo
 
     println("Авторизация в системе...")
     println("Пожалуйста, решите пример, чтобы подтвердить, что вы не бот.")
-    print(robotTest)
+    print("$operantOne + $operantTwo = ")
 
     val inputAnswer = readLine()?.toIntOrNull()
     val isHuman = inputAnswer == answer
