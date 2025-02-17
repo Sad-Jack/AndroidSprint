@@ -4,6 +4,7 @@ fun main() {
 
     val winningNumber1 = 7
     val winningNumber2 = 21
+    val ranges = 0..42
 
     println("Введите первое число (от 0 до 42): ")
     val userNumber1 = readLine()?.toIntOrNull()
@@ -11,7 +12,7 @@ fun main() {
     println("Введите второе число (от 0 до 42): ")
     val userNumber2 = readLine()?.toIntOrNull()
 
-    if (userNumber1 == null || userNumber2 == null || userNumber1 !in 0..42 || userNumber2 !in 0..42) {
+    if (userNumber1 == null || userNumber2 == null || userNumber1 !in ranges || userNumber2 !in ranges) {
         println("Ошибка ввода! Введите числа от 0 до 42.")
         return
     }
