@@ -5,7 +5,7 @@ const val PASSWORD = "PanGalactic"
 
 fun main() {
 
-    var messageWelcome = """
+    val messageWelcome = """
         Внимание, пассажир. Моя обязанность, как обычно, незавидная, - приветствовать вас на борту корабля "Heart of Gold".
         [вздыхает...] 
         Что ж, введи, пожалуйста, свое имя пользователя, чтобы мы могли приступить к процессу входа.
@@ -30,11 +30,13 @@ fun main() {
         [Увел взгляд...]
     """.trimIndent()
 
+
     println(messageWelcome)
+
     println("Введите имя пользователя:")
-    val isSuccessName = readLine()!!.toString() == LOGIN
+    val isSuccessName = readln() == LOGIN
     println("Введите пароль:")
-    val isSuccessPassword = readLine()!!.toString() == PASSWORD
+    val isSuccessPassword = readln() == PASSWORD
 
     if (isSuccessName && isSuccessPassword) print(messageSuccessfulAuthorization)
     else print(messageUnsuccessfulAuthorization)
