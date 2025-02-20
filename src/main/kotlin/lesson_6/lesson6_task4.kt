@@ -12,17 +12,15 @@ fun main() {
 
     while (tryCount > 0) {
         val userNumber = readLine()?.toIntOrNull() ?: 0
-
         if (userNumber == number) {
             println(textEndWin)
             break
+        }
+        tryCount--
+        if (tryCount > 0) {
+            println(textRepeat)
         } else {
-            tryCount--
-            if (tryCount > 0) {
-                println(textRepeat)
-            } else {
-                println(textEndLose)
-            }
+            println(textEndLose)
         }
     }
 }
