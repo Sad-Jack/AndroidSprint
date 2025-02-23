@@ -1,6 +1,6 @@
 package lesson_7
 
-import jack.ripper.lesson_6.MILLISECOND_SECOND
+import lesson_6.MILLISECOND_SECOND
 
 fun main() {
     println("Таймер.")
