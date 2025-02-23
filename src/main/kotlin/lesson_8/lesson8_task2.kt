@@ -1,13 +1,22 @@
 package lesson_8
 
 fun main() {
-    val recipeSalad = arrayOf("Огурец", "Морковь", "Картошка", "Грибы", "Чеснок")
-    val userProduct = readln()
-    for (i in recipeSalad.indices) {
-        if (recipeSalad[i] == userProduct) {
-            println("Есть в рецепте")
-        } else {
-            println("Нет в рецепте")
+    val ingredients = arrayOf("мука", "яйца", "молоко", "сахар", "соль", "масло")
+    var isIngredientFound = false
+
+    println("Введите ингредиент, который хотите найти:")
+    val userIngredient = readln()
+
+    for (ingredient in ingredients) {
+        if (ingredient == userIngredient) {
+            isIngredientFound = true
+            break
         }
+    }
+
+    if (isIngredientFound) {
+        println("Ингредиент \"$userIngredient\" в рецепте есть.")
+    } else {
+        println("Такого ингредиента в рецепте нет.")
     }
 }
