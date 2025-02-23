@@ -1,4 +1,4 @@
-package jack.ripper.lesson_5
+package lesson_5
 
 const val LOGIN = "Zaphod"
 const val PASSWORD = "PanGalactic"

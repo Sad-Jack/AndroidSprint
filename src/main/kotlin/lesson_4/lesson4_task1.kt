@@ -1,4 +1,4 @@
-package jack.ripper.lesson_4
+package lesson_4
 
 const val TOTAL_TABLES = 13
 

@@ -1,4 +1,4 @@
-package jack.ripper.lesson_9
+package lesson_9
 
 class lesson9_task1 {
 }
