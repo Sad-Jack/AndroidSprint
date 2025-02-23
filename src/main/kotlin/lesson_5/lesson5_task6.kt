@@ -1,4 +1,4 @@
-package jack.ripper.lesson_5
+package lesson_5
 
 const val CONVERSION_FACTOR = 100.0
 const val UNDERWEIGHT_THRESHOLD = 18.5

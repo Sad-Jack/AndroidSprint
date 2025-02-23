@@ -1,4 +1,4 @@
-package jack.ripper.lesson_6
+package lesson_6
 
 fun main() {
     println("Зарегистрируйтесь в приложении")

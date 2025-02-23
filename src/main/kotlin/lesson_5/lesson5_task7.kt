@@ -1,4 +1,4 @@
-package jack.ripper.lesson_5
+package lesson_5
 
 const val FUEL_CONSUMPTION_DIVISOR = 100.0
 

@@ -1,7 +1,4 @@
-package jack.ripper.lesson_6
-
-const val MILLISECOND_SECOND = 1000L  //todo Не знаю что делать с конфликтом констант после мерджа веток
-
+package lesson_6
 fun main() {
 
     print("Введите количество секунд: ")

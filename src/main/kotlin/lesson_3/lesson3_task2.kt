@@ -1,4 +1,4 @@
-package jack.ripper.lesson_3
+package lesson_3
 
 fun main() {
     var name = "Татьяна"

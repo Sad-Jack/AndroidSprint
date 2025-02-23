@@ -1,4 +1,4 @@
-package jack.ripper.lesson_1
+package lesson_1
 
 fun main() {
     val length: Long = 40_868_600_000L

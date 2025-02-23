@@ -1,4 +1,4 @@
-package jack.ripper.lesson_2
+package lesson_2
 
 const val MINUTES_IN_HOUR = 60
 

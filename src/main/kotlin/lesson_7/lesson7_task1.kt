@@ -1,4 +1,4 @@
-package jack.ripper.lesson_7
+package lesson_7
 
 fun main() {
     val letters = ('a'..'z').toList()

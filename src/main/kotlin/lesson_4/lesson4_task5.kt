@@ -1,4 +1,4 @@
-package jack.ripper.lesson_4
+package lesson_4
 
 
 const  val COUNT_PROVISION_BOX_MIN = 50

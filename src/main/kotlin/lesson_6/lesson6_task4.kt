@@ -1,4 +1,4 @@
-package jack.ripper.lesson_6
+package lesson_6
 
 fun main() {
     val number = (1..9).random()

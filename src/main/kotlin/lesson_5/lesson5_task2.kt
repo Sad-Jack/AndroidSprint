@@ -1,4 +1,4 @@
-package jack.ripper.lesson_5
+package lesson_5
 
 const val AGE_OF_MAJORITY = 18
 const val AGE_SEVENTEEN = 17
