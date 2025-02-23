@@ -1,4 +1,4 @@
-package jack.ripper.lesson_1
+package lesson_1
 
 const val SECONDS_IN_HOUR = 3600
 

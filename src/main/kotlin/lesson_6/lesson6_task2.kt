@@ -1,4 +1,4 @@
-package jack.ripper.lesson_6
+package lesson_6
 
 const val MILLISECOND_SECOND = 1000L
 

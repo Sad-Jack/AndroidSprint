@@ -1,4 +1,4 @@
-package jack.ripper.lesson_4
+package lesson_4
 
 fun main() {
     val minWeight = 35
