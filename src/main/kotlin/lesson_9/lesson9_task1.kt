@@ -1,4 +1,6 @@
 package lesson_9
 
-class lesson9_task1 {
+fun main() {
+    val ingredients = listOf("мука", "яйца", "молоко", "сахар", "соль", "масло")
+    print("Ингредиенты в рецепте:\n" + ingredients.joinToString("\n"))
 }
