@@ -7,9 +7,9 @@ fun main() {
 
     print("Введите ингредиент, который хотите заменить: ")
     val replaceable = readln().lowercase()
-    if (replaceable in ingredients) {
-        val indexIngredient = ingredients.indexOf(replaceable)
+    val indexIngredient = ingredients.indexOf(replaceable)
 
+    if (indexIngredient != -1) {
         print("Введите ингредиент, который будет заменять его: ")
         val replacement = readln().lowercase()
         ingredients[indexIngredient] = replacement
