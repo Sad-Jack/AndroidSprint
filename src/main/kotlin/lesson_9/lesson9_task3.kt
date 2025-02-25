@@ -5,13 +5,10 @@ fun main() {
 
     print("Введите количество порций: ")
     val portions = readln().toIntOrNull() ?: 1
-
-    val eggs = ingredients[0] * portions
-    val milk = ingredients[1] * portions
-    val butter = ingredients[2] * portions
+    val totalIngredients = ingredients.map {it * portions}
 
     println("На $portions порций вам понадобится:")
-    println("Яиц – $eggs шт.")
-    println("Молока – $milk мл.")
-    println("Сливочного масла – $butter гр.")
+    println("Яиц – ${totalIngredients[0]} шт.")
+    println("Молока – ${totalIngredients[1]} мл.")
+    println("Сливочного масла – ${totalIngredients[2]} гр.")
 }
