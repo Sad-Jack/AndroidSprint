@@ -21,9 +21,9 @@ fun main() {
     }
 }
 
-fun rollDice() = (1..6).random()
+private fun rollDice() = (1..6).random()
 
-fun chooseWinner(computerNumber: Int, playerNumber: Int) = when {
+private fun chooseWinner(computerNumber: Int, playerNumber: Int) = when {
     computerNumber > playerNumber -> "Победила машина 🤖"
     computerNumber < playerNumber -> "Победило человечество 🏆"
     else -> "Победила дружба ✨"
