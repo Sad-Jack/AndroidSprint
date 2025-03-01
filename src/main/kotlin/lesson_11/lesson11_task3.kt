@@ -63,8 +63,11 @@ class Room(
     }
 
     fun addUser(user: User3) {
-        users.add(user)
-        println("Новый пользователь: ${user.getName()}")
+        if (!users.contains(user)){
+            users.add(user)
+            println("Новый пользователь: ${user.getName()}")
+        } else { println("Пользователь ${user.getName()} уже в комнате. " +
+                "Смените имя пользователя, что бы войти в эту комнату!.") }
     }
 
     fun updateUserStatus(userName: String, newStatus: Status) {
