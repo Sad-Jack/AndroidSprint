@@ -27,9 +27,9 @@ fun main() {
     println("Выигрышные числа: $counterWins")
 }
 
-fun rollDice() = (1..6).random()
+private fun rollDice() = (1..6).random()
 
-fun chooseWinner(computerNumber: Int, playerNumber: Int): Boolean {
+private fun chooseWinner(computerNumber: Int, playerNumber: Int): Boolean {
     when {
         computerNumber < playerNumber -> {
             println("Победило человечество 🏆")

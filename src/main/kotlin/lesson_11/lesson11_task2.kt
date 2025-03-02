@@ -41,15 +41,15 @@ class User2(
     }
 }
 
-val user1 = User2("sa3eADSD43daADASDSDs32AD4d", "Jack", "avosend", "sad@ya.ru")
+val user5 = User2("sa3eADSD43daADASDSDs32AD4d", "Jack", "avosend", "sad@ya.ru")
 
 fun main() {
     println("Обновление информации о себе!")
-    user1.updateBio()
+    user5.updateBio()
     println()
 
     println("Изменение пароля!")
-    user1.changePassword()
+    user5.changePassword()
     println()
 
     println("Вывод информации о пользователе!")
