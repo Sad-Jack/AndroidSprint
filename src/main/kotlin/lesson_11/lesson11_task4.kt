@@ -20,12 +20,20 @@ data class Recipe(
     val title: String,
     val description: String,
     val ingredients: List<Ingredient>,
-    val category: RecipeCategory,
+    val category: List<RecipeCategory>, // Рецепт может принадлежать нескольким категориям(Бургер может быть с рыбой, роллы десертом, и т.д.)
     val cookingTimeMinutes: Int,
+    var favoritesCount: Int, // Количество сохранений рецепта, для фильтрации рецептов по популярности
 ) {
 
     fun scaleIngredients(quantity: Int): List<Ingredient> {
         return ingredients.map { it.copy(quantity = it.quantity * quantity) }
     }
 
+    fun addToFavorites(){
+        favoritesCount++
+    }
+
+    fun removeToFavorites(){
+        favoritesCount--
+    }
 }
