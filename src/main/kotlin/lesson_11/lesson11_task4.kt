@@ -5,6 +5,7 @@ data class RecipeCategory(
     val name: String,
     var image: String,
     val description: String,
+    val recipes: MutableList<Recipe>,
 )
 
 data class Ingredient(
