@@ -1,5 +1,7 @@
 package lesson_11;
 
+import kotlin.io.println
+
 data class User4(val userId: Int, val userName: String)
 
 data class Message(val authorId: Int, val message: String)
