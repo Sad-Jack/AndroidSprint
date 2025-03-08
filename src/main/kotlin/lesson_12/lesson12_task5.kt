@@ -1,7 +1,5 @@
 package lesson_12
 
-import kotlin.random.Random
-
 class Weather(dayTempKelvin: Int, nightTempKelvin: Int, val hasPrecipitation: Boolean) {
     val dayTemperature: Int = dayTempKelvin - 273
     val nightTemperature: Int = nightTempKelvin - 273
@@ -11,9 +9,9 @@ fun main() {
     val daysInMonth = 30
     val weatherData = List(daysInMonth) {
         Weather(
-            dayTempKelvin = Random.nextInt(270, 310), // от -3°C до +37°C
-            nightTempKelvin = Random.nextInt(260, 300), // от -13°C до +27°C
-            hasPrecipitation = Random.nextBoolean()
+            dayTempKelvin = (270..310).random(),// от -3°C до +37°C
+            nightTempKelvin = (270..310).random(), // от -13°C до +27°C
+            hasPrecipitation = (0..1).random() == 1
         )
     }
 
